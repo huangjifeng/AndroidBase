@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickManager"
+        android:text="按钮01" />
+
+    <Button
+        android:id="@+id/button_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickManager"
+        android:text="按钮02" />
+    <fragment
+        android:id="@+id/manager_fragment_01"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:name="com.huangjifeng.fragment.fragmentmanager.ManagerFragment01"/>
+    <FrameLayout
+        android:id="@+id/frame_layout_01"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></FrameLayout>
+
+
+</LinearLayout>

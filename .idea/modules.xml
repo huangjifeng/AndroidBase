@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidBase.iml" filepath="$PROJECT_DIR$/AndroidBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/activity/activity.iml" filepath="$PROJECT_DIR$/activity/activity.iml" />
       <module fileurl="file://$PROJECT_DIR$/async_query_handler/async_query_handler.iml" filepath="$PROJECT_DIR$/async_query_handler/async_query_handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialogfragment/dialogfragment.iml" filepath="$PROJECT_DIR$/dialogfragment/dialogfragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragment/fragment.iml" filepath="$PROJECT_DIR$/fragment/fragment.iml" />
     </modules>
   </component>
 </project>

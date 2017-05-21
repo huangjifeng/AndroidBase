@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activity" />
             <option value="$PROJECT_DIR$/async_query_handler" />
+            <option value="$PROJECT_DIR$/dialogfragment" />
+            <option value="$PROJECT_DIR$/fragment" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

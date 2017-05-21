@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--  静态添加 Fragment
+    1、使用android:name前缀来引用具体的Fragment
+    2、每个Fragment必须有一个独立的id或者Tag，用于代码中查找相关的fragment-->
+    <fragment
+        android:id="@+id/fragment_01"
+        android:name="com.huangjifeng.fragment.simpleuse.UseFragment01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragment_02"
+        android:name="com.huangjifeng.fragment.simpleuse.UseFragment02"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000" />
+
+    <!--当动态添加Fragment时必须需要一个ViewGroup来进行替换-->
+    <FrameLayout
+        android:id="@+id/frame_layout_02"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000" />
+
+</LinearLayout>

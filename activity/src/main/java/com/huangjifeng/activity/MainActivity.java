@@ -2,6 +2,7 @@ package com.huangjifeng.activity;
 
 import android.app.Fragment;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
