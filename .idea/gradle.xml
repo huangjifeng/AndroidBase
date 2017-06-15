@@ -3,16 +3,18 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="E:\Android studio\Android studio\gradle\gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activity" />
+            <option value="$PROJECT_DIR$/animator" />
             <option value="$PROJECT_DIR$/async_query_handler" />
             <option value="$PROJECT_DIR$/dialogfragment" />
             <option value="$PROJECT_DIR$/fragment" />
+            <option value="$PROJECT_DIR$/notification" />
+            <option value="$PROJECT_DIR$/service" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

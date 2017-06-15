@@ -1,1 +1,1 @@
-include ':async_query_handler', ':activity', ':dialogfragment', ':fragment'
+include ':async_query_handler', ':activity', ':dialogfragment', ':fragment', ':animator', ':service', ':notification'
