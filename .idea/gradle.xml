@@ -10,11 +10,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activity" />
             <option value="$PROJECT_DIR$/animator" />
+            <option value="$PROJECT_DIR$/annontation" />
             <option value="$PROJECT_DIR$/async_query_handler" />
             <option value="$PROJECT_DIR$/dialogfragment" />
             <option value="$PROJECT_DIR$/fragment" />
             <option value="$PROJECT_DIR$/notification" />
+            <option value="$PROJECT_DIR$/reflection" />
             <option value="$PROJECT_DIR$/service" />
+            <option value="$PROJECT_DIR$/sqlitedatabase" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
