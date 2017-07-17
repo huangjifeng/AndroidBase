@@ -1,10 +1,17 @@
 package com.huangjifeng.reflection;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.EventLogTags;
 import android.util.Log;
+import android.widget.Toast;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
+import java.security.KeyRep;
+import java.sql.SQLOutput;
 
 /**
  * http://www.sczyh30.com/posts/Java/java-reflection-1/
@@ -31,20 +38,61 @@ import java.lang.reflect.Method;
  *      (1)使用Class类的静态方法：forName:   Class.forName("java.lang.String")
  *      (2)使用类的.class语法： String.class;
  *      (3)使用对象的getClass()方法： String s = "aa";  Class<?> clazz = s.getClass();
- * 3、
+ * 3、若想通过类的不带参数的构造方法来生成对象，我们有两种方式
+ *      （1）先获得Class对象，然后通过该Class对象的newInstance()方法直接生成即可：
+ *      Class<?> classType = String.class;
+ *      Object obj = classType.newInstance()
+ *      (2)先获得Class对象，然后通过该对象获得对应的Constructor对象，再通过该Constructor对象的
+ *      newInstance()方法生成：
+ *      Class<?> classType = String.class;
+ *      Constructor cons = classType.getConstructor(new Class[]{});
+ *      Object obj = cons.newInstance(new Object[]{});
  *
  */
 public class MainActivity extends AppCompatActivity {
 
     private Class<?> classType;
+    private static final String TAG = "MainActivity";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //getClassDeclaredName();
+        //getInvokeTest();
+        //getClassConstructor(new Student(10,"xiaoming"));
+        copyStudent();
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "onCreate: ");
+        Log.d(TAG, "onCreate: ");
 
-        getInvokeTest();
+    }
+
+    private void copyStudent() {
+
+
+    }
+
+    /**
+     * 该方法是动态获取其的构造方法然后生成新的对象
+     * */
+    private void getClassConstructor(Student student) {
+        Class<?> clazz = student.getClass();
+        try {
+            Constructor constructor = clazz.getConstructor(new Class[]{int.class,String.class});
+            Object object01= constructor.newInstance(new Object[]{20,"dagang"});
+            Log.v("haha", "---------object01 =   " + object01);
+
+            /**这种方式只能使用无参构造方法,上面的方法也可以实现无参构造函数*/
+            Object object02 = clazz.newInstance();
+            Log.v("haha", "---------object02 =   " + object02.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     private void getInvokeTest() {
