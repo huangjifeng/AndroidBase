@@ -16,7 +16,6 @@ import com.huangjifeng.dialogfragment.R;
 
 public class TestActivity extends AppCompatActivity {
 
-    private boolean isShowDialog = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,16 +27,9 @@ public class TestActivity extends AppCompatActivity {
 
     }
 
-    public void setShowedDialog(boolean b) {
-        isShowDialog = b;
-    }
-
     private void showDialogByView() {
-        if (!isShowDialog) {
-            isShowDialog = true;
-            TestViewFragment viewFragment = new TestViewFragment();
-            viewFragment.show(getSupportFragmentManager(), "test_view_fragment");
-        }
+        TestViewFragment viewFragment = TestViewFragment.getInstance();
+        viewFragment.show(getSupportFragmentManager(), "test_view_fragment");
     }
 
     private void showDialog() {

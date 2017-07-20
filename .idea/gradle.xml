@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/dialogfragment" />
             <option value="$PROJECT_DIR$/fragment" />
             <option value="$PROJECT_DIR$/notification" />
+            <option value="$PROJECT_DIR$/preference_fragment" />
             <option value="$PROJECT_DIR$/reflection" />
             <option value="$PROJECT_DIR$/service" />
             <option value="$PROJECT_DIR$/sqlitedatabase" />

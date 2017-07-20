@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_list">
+        <item>猫头鹰</item>
+        <item>猫</item>
+        <item>水牛</item>
+        <item>蛇</item>
+        <item>鸭子</item>
+        <item>青蛙</item>
+    </string-array>
+
+    <string-array name="entryvalues_list">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+        <item>005</item>
+        <item>006</item>
+    </string-array>
+</resources>
