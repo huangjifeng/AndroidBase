@@ -1,6 +1,7 @@
 package com.huangjifeng.sqlitedatabase.tool001;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 /**
@@ -29,7 +30,23 @@ public class DataBaseTool {
          * 特殊SQL符号，为保证组拼好的SQL语句语法正确，必须对SQL语句中的这些特殊SQL符号都进行转义，
          * 显然，对每条SQL语句都做这样的处理工作是比较烦琐的。
          * */
+        /**execSQL(String sql, Object[] bindArgs)方法的第一个参数为SQL语句，第二个参数为SQL语句
+         * 中占位符参数的值，参数值在数组中的顺序要和占位符的位置对应。*/
         database.execSQL("insert into person (name, age) values(?, ?)", new Object[]{"黄基锋", 4});
+        database.close();
+    }
+
+    public void queryPerson() {
+        SQLiteDatabase database = openHelper.getWritableDatabase();
+        Cursor cursor = database.rawQuery("select * from person", null);
+        //Cursor cursor = database.rawQuery("select * from person where name like ? and age = ?",
+        //               new String[]{"%林计钦%", "4"});
+        while (cursor.moveToNext()) {
+            int personId = cursor.getInt(0);    //获取第一列的值，第一列的索引从0开始
+            String name = cursor.getString(1);  //获取第二列的值
+            int age = cursor.getInt(3);         //获取第三列的值
+        }
+        cursor.close();
         database.close();
     }
 
