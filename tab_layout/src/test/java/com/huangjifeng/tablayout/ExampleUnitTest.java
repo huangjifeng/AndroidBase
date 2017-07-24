@@ -1,4 +1,4 @@
-package com.huangjifeng.sqlitedatabase;
+package com.huangjifeng.tablayout;
 
 import org.junit.Test;
 

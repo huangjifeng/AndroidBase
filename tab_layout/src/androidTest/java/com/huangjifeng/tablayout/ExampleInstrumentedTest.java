@@ -1,4 +1,4 @@
-package com.huangjifeng.sqlitedatabase;
+package com.huangjifeng.tablayout;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.huangjifeng.sqlitedatabase", appContext.getPackageName());
+        assertEquals("com.huangjifeng.tablayout", appContext.getPackageName());
     }
 }
