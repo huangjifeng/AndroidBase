@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+    android:orderInCategory
+    actionbar里每个item的优先级，值越大优先级越低，actionbar地方不够就会放到overflow中
+    -->
+    <item
+        android:id="@+id/edit"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:orderInCategory="80"
+        android:title="edit"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_language_white_24dp"
+        android:orderInCategory="90"
+        android:title="share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:orderInCategory="100"
+        android:title="setting"
+        app:showAsAction="never" />
+
+</menu>
