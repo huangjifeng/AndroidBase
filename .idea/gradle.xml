@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/animator" />
             <option value="$PROJECT_DIR$/annontation" />
             <option value="$PROJECT_DIR$/async_query_handler" />
+            <option value="$PROJECT_DIR$/content_provider" />
             <option value="$PROJECT_DIR$/coordinatorlayout" />
             <option value="$PROJECT_DIR$/dialogfragment" />
             <option value="$PROJECT_DIR$/fragment" />
@@ -22,6 +23,7 @@
             <option value="$PROJECT_DIR$/service" />
             <option value="$PROJECT_DIR$/sqlitedatabase" />
             <option value="$PROJECT_DIR$/tab_layout" />
+            <option value="$PROJECT_DIR$/test" />
             <option value="$PROJECT_DIR$/toolbar" />
           </set>
         </option>

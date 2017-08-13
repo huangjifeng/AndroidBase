@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Toast;
 
 /**
+ * http://www.jianshu.com/p/79604c3ddcae
+ *
  * ToolBar必须是在继承自AppCompatActivity的Actiivty类中使用
  * 一般将toolBar设置在基类当中，这样可以增加类的复用性
  */
